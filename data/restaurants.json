@@ -1,0 +1,38 @@
+[
+    {
+        "id": "R1",
+        "name": "Green Garden Bistro",
+        "cuisine": "Healthy & Salads",
+        "phone": "+91 98765 43210",
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "joined_date": "2026-06-15"
+    },
+    {
+        "id": "R2",
+        "name": "The Pizza Haven",
+        "cuisine": "Italian & Fast Food",
+        "phone": "+91 98765 43211",
+        "latitude": 12.9698,
+        "longitude": 77.6123,
+        "joined_date": "2026-07-02"
+    },
+    {
+        "id": "R3",
+        "name": "Spice Symphony Restaurant",
+        "cuisine": "Indian Fine Dine",
+        "phone": "+91 98765 43212",
+        "latitude": 12.9782,
+        "longitude": 77.6405,
+        "joined_date": "2026-07-10"
+    },
+    {
+        "id": "R4",
+        "name": "Sweet Treats Bakery",
+        "cuisine": "Bakery & Desserts",
+        "phone": "+91 98765 43213",
+        "latitude": 12.9591,
+        "longitude": 77.5721,
+        "joined_date": "2026-07-25"
+    }
+]

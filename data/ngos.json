@@ -1,0 +1,42 @@
+[
+    {
+        "id": "N1",
+        "name": "Robin Hood Army - Central",
+        "focus_area": "Cooked Meals Redistribution",
+        "phone": "+91 91234 56780",
+        "latitude": 12.975,
+        "longitude": 77.6,
+        "capacity_kg": 500,
+        "joined_date": "2026-05-10"
+    },
+    {
+        "id": "N2",
+        "name": "No Food Waste - Indiranagar",
+        "focus_area": "Surplus Groceries & Produce",
+        "phone": "+91 91234 56781",
+        "latitude": 12.971,
+        "longitude": 77.632,
+        "capacity_kg": 300,
+        "joined_date": "2026-06-01"
+    },
+    {
+        "id": "N3",
+        "name": "Feed The Needy - Jayanagar",
+        "focus_area": "Fresh Produce & Breads",
+        "phone": "+91 91234 56782",
+        "latitude": 12.955,
+        "longitude": 77.58,
+        "capacity_kg": 250,
+        "joined_date": "2026-06-18"
+    },
+    {
+        "id": "N4",
+        "name": "Hope Foundation - Malleshwaram",
+        "focus_area": "All Food Types (Cooked/Dry)",
+        "phone": "+91 91234 56783",
+        "latitude": 12.985,
+        "longitude": 77.585,
+        "capacity_kg": 400,
+        "joined_date": "2026-07-05"
+    }
+]
