@@ -175,8 +175,7 @@ menu = st.sidebar.radio(
 
 st.sidebar.markdown("---")
 st.sidebar.markdown(
-    """Custom coded for **Hackathon Demo**  
-    🔋 Local Database Active  
+    """🔋 Local Database Active  
     🌱 **Eco-Carbon Saver** Enabled"""
 )
 
@@ -301,15 +300,7 @@ if menu == "🏠 Home & Overview":
         else:
             st.info("All donations have been collected. Outstanding active bulletins will show here.")
 
-        # Brief Quick-Access Section
-        st.markdown("---")
-        st.markdown("### 🧬 Technology Architecture Details")
-        st.code("""
-  Module:  app.py            [GUI - Streamlit Wrapper]
-  Module:  database.py       [JSON-file Storage - Local disk]
-  Module:  ml_models.py      [Rule Engine: Proximity logic, Freshness curves]
-  Datastores:                data/*.json (Restaurants, NGOs, Donations)
-        """, language="yaml")
+
 
 # ==========================================
 # PAGE 2: PARTNER REGISTRATION
@@ -454,7 +445,7 @@ elif menu == "📤 Food Donation Upload":
             with col2:
                 # Image Upload
                 st.markdown("**Simulate AI Scan Camera**")
-                uploaded_file = st.file_uploader("Upload Food Photo", type=["jpg", "jpeg", "png"])
+                uploaded_file = st.file_uploader("Food Photo", type=["jpg", "jpeg", "png"])
                 
                 st.markdown("💡 *OR use a Hackathon Quick Preset image if you don't have a photo:*")
                 preset_selected = st.radio("Choose Photo Demo Preset", ["None (Use uploaded file)", "🍕 Pizza", "🥗 Salad/Produce", "🍞 Sourdough Bread", "🍛 Paneer Curry"], index=0)
@@ -652,7 +643,7 @@ elif menu == "🤖 AI Food Detection":
     
     with col1:
         st.subheader("📷 Test Image Input Node")
-        uploaded_img = st.file_uploader("Upload Image File", type=["jpg", "png", "jpeg"], key="det_page_uploader")
+        uploaded_img = st.file_uploader("Image File", type=["jpg", "png", "jpeg"], key="det_page_uploader")
         
         st.markdown("---")
         preset_det = st.selectbox(
