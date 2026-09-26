@@ -446,12 +446,7 @@ elif menu == "📤 Food Donation Upload":
                 # Image Upload
                 st.markdown("**Simulate AI Scan Camera**")
                 uploaded_file = st.file_uploader("Food Photo", type=["jpg", "jpeg", "png"])
-                
-                st.markdown("💡 *OR use a Hackathon Quick Preset image if you don't have a photo:*")
-                preset_selected = st.radio("Choose Photo Demo Preset", ["None (Use uploaded file)", "🍕 Pizza", "🥗 Salad/Produce", "🍞 Sourdough Bread", "🍛 Paneer Curry"], index=0)
-                
-                # Category Hint
-                cat_hint = st.text_input("AI Detection Hint (Optional)", placeholder="e.g. Tomato Pizza, Garden Salad")
+
 
         # Process button
         st.markdown("<br>", unsafe_allow_html=True)
@@ -464,11 +459,9 @@ elif menu == "📤 Food Donation Upload":
             filename = ""
             if uploaded_file:
                 filename = uploaded_file.name
-            elif preset_selected != "None (Use uploaded file)":
-                filename = preset_selected.lower() + ".jpg"
             
             # Fetch AI food classification
-            detection = ml.detect_food(filename, cat_hint if cat_hint else (preset_selected if preset_selected != "None" else ""))
+            detection = ml.detect_food(filename, "")
             
             # Calculate freshness using formula
             freshness = ml.predict_freshness(detection["food_category"], prep_hours, storage_cond)
